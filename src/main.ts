@@ -11,7 +11,7 @@ async function bootstrap() {
   app.useGlobalInterceptors(new LoggingInterceptor());
   app.useGlobalFilters(new HttpExceptionFilter());
   await app.listen(3000);
-  Logger.log(`Server running on http://localhost:${port}`, 'bootstrap');
+  Logger.log(`Server running on http://localhost:${port}`, 'Bootstrap');
 }
 
 bootstrap();
