@@ -9,7 +9,7 @@ export class PodsController {
   /**
    *
    * @param {*} queryObj
-   * @example /api/pods?packSize=7&productType=COFFEE_POD_LARGE
+   * @example /api/pods?pack=3&productType=COFFEE_POD_LARGE
    * @returns {Promise<Pod[]>}
    * @memberof PodsController
    */

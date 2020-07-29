@@ -10,6 +10,6 @@ export class MachineService {
   public getMachines(queryObj: any): Promise<Machine[]> {
     if (queryObj['water'] === 'true') queryObj['waterLineCompatible'] = true;
     delete queryObj['water'];
-    return this.machineModel.find({ queryObj }).exec();
+    return this.machineModel.find(queryObj).exec();
   }
 }

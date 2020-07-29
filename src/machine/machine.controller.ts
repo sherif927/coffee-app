@@ -9,7 +9,7 @@ export class MachineController {
   /**
    *
    * @param {*} queryObj
-   * @example /api/machines?waterLineCompatible=true&productType=COFFEE_MACHINE_LARGE
+   * @example /api/machines?water=true&productType=COFFEE_MACHINE_LARGE
    * @returns {Promise<Machine[]>}
    * @memberof MachineController
    */

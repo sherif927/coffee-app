@@ -10,6 +10,6 @@ export class PodsService {
   public getPods(queryObj: any): Promise<Pod[]> {
     if (queryObj['pack']) queryObj['packSize'] = parseInt(queryObj['pack']);
     delete queryObj['pack'];
-    return this.podModel.find({ queryObj }).exec();
+    return this.podModel.find(queryObj).exec();
   }
 }
